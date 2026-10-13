@@ -8,10 +8,10 @@ a:focus-visible{outline:3px solid var(--link);outline-offset:2px;border-radius:2
 .skip{position:absolute;left:-999px;top:0;background:var(--surface);padding:.75rem 1rem;z-index:1}
 .skip:focus{left:0}
 header,main,footer{max-width:46rem;margin:0 auto;padding:1rem}
-header{position:sticky;top:0;z-index:2;background:color-mix(in srgb,var(--bg) 85%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
-.brand{display:inline-flex;align-items:center;gap:.6rem;font-weight:800;font-size:1.25rem;text-decoration:none;color:var(--text)}
-.brand img{border-radius:.5rem;box-shadow:0 1px 3px rgb(0 0 0/.25)}
-nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem}
+header{position:sticky;top:0;z-index:2;background:color-mix(in srgb,var(--bg) 85%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:space-between;text-align:center;border-bottom:1px solid var(--border)}
+.brand{display:inline-flex;align-items:center;gap:.75rem;line-height:1;font-weight:800;font-size:1.25rem;text-decoration:none;color:var(--text)}
+.brand img{display:block;flex:none;padding:.25rem;border-radius:.75rem;box-shadow:0 1px 3px rgb(0 0 0/.25)}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:.25rem .5rem}
 nav a{padding:.5rem .75rem;border-radius:999px;color:var(--muted);text-decoration:none;transition:background-color .15s,color .15s}
 nav a:hover{background:var(--note);color:var(--text)}
 nav a[aria-current=page]{color:var(--text);background:var(--note);font-weight:700}
